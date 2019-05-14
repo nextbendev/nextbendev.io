@@ -4,4 +4,11 @@ class ApplicationController < ActionController::Base
 
   def help
   end
+
+  def about
+end
+
+  def contact
+  end
+
 end
