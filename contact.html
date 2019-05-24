@@ -2,54 +2,68 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Gastronomic Consulting</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
   </head>
+    <body>
+      <div id="contact-form">
+      	<div>
+      		<h4>Have a question or just want to get in touch? Let's chat.</h4>
+      	</div>
 
+      		<p id="failure">Message not sent.</p>
+      		<p id="success">Your message was sent successfully. Thank you!</p>
 
-  
-  <body>
-    
-     <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="main.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-    
-    <div>
-      <form action="" class="contact" onsubmit="return false;">
-     <fieldset class="contact-inner">
-      <p class="contact-input">
-      <input type="text" name="name" placeholder="Your Name…" autofocus>
-      </p>
+      		   <form method="post" action="/">
+      			<div>
+      		      <label for="name">
+      		      	<span class="required">Name: *</span>
+      		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+      		      </label>
+      			</div>
 
-    <p class="contact-input">
-      <label for="select" class="select">
-        <select name="subject" id="select">
-          <option value="" selected>Choose Subject…</option>
-          <option value="1">Schedule Appointment</option>
-          <option value="1">Get more info</option>
-          <option value="1">Other</option>
-        </select>
-      </label>
-    </p>
+      			<div>
+      		      <label for="email">
+      		      	<span class="required">Email: *</span>
+      		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+      		      </label>
+      			</div>
 
-    <p class="contact-input">
-      <textarea name="message" placeholder="Your Message…"></textarea>
-    </p>
+            <div>
+      		      <label for="subject">
+      		      <span>Subject: </span>
+      			      <select id="subject" name="subject" tabindex="4">
+      			         <option value="hello">Pill Choice</option>
+      			         <option value="quote">Red</option>
+      			         <option value="general">Blue</option>
+      			      </select>
+      		      </label>
+      			</div>
 
-    <p class="contact-submit">
-      <input type="submit" value="Send Message">
-    </p>
-  </fieldset>
-</form>
-      
-    </div>
+            <div>
+      		      <label for="message">
+      		      	<span class="required">Message: *</span>
+      		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+      		      </label>
+      			</div>
 
+            <div>
+      		      <button name="submit" type="submit" id="submit" >SEND</button>
+      			</div>
+  		   </form>
 
-  </body>
-</html>
+      	</div>
+
+        <a href="index.html" <button type="button" class="btn btn-outline-warning">Escape</button>></a>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
