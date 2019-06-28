@@ -102,13 +102,13 @@ footer {
 
 .blog-thumbnail {
   flex-basis: 30%;
-  background: #ccc;
+  background: black;
   padding: 15px;
 }
 
 .thumbnail-frame {
   width: 130px;
-  background: #eee;
+  background: black;
   height: 80px;
   display: block;
 }
