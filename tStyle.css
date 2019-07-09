@@ -1,0 +1,78 @@
+*{box-sizing: border-box}
+
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(imgsrc/show.jpg)
+}
+
+
+
+.container{width: 600px;
+       overflow: hidden;
+       margin: 50px auto 0 auto;
+
+     }
+
+.container span{width: 100%;
+            display: block;
+            text-align: center;
+            font-family: sans-serif;
+            color: #fff;
+            font-size: 25px;
+            background: #446CB3;
+            /*height: 100%;
+             width: 100%;*/
+           }
+
+.container .box{float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            transition: all .25s ease-in-out;
+            font-family: sans-serif;
+            font-size: 85px;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+          }
+
+.container .box:hover{background: rgba(10,10,10,0.5);
+                color: white;
+                background-image: url(imgsrc/silo.jpg);
+                cursor: pointer;
+                transform:scale(1.25,1.25);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+button{background: #26C281;
+    padding: 10px;
+    margin: 10px
+    font-size:20px;
+    background: url(imgsrc/lookButt.jpg);
+    height: 70px;
+    width: 140px;
+    color:white;
+    position: relative;
+    margin-left: 44%;
+
+
+
+
+.win{background: #F9690E; color: #fff}
